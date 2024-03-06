@@ -1,0 +1,55 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a class="header__logo" href=""><img src="{% static 'img/лого.jpg' %}" alt="img"></a>
+            <h1>DentalClinic</h1>
+        </div>
+        <div class="logo-navigate">
+            <a class="header__link" href="/">Главная</a>
+            <a class="header__link" href="/price">Услуги</a>
+            <a class="header__link" href="/contacts">Контакты</a>
+            <a class="header__link" href="">+7800 333 22</a>
+        </div>
+    </header>
+    {% block content %}{% endblock %}
+
+   <footer>
+        <div class="footer__logotype">
+            <div class="footer-logo">
+                <img src="{% static 'img/logo.jpg' %}" alt="">
+                <h1>DentalClinic</h1>
+            </div>
+            <p>Лечение зубов в Москве и Московской области</p>
+        </div>
+        <div class="links-block">
+            <h3>Информация</h3>
+            <li><a href="">Почему мы</a></li>
+            <li><a href="">отзывы</a></li>
+            <li><a href="">контакты</a></li>
+        </div>
+        <div class="links-block">
+            <h3>Записи на прием</h3>
+            <li><a href="">Почему мы</a></li>
+            <li><a href="">отзывы</a></li>
+            <li><a href="">контакты</a></li>
+        </div>
+        <div class="links-block">
+            <h3>Врачи клиники</h3>
+            <li><a href="">Почему мы</a></li>
+            <li><a href="">отзывы</a></li>
+            <li><a href="">контакты</a></li>
+        </div>
+    </footer>
+</body>
+</html>

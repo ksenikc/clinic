@@ -1,0 +1,55 @@
+{% extends 'clinic/base.html' %}
+{% load static %}
+
+{% block title %}
+Главная
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <img class="dada__img" src="{% static 'img/dada.jpg' %}"alt="">
+    <div class="content">
+        <h1>Более <span> 10 лет</span></h1>
+        <h3>опыта в лечении зубов</h3>
+        <div class="line"></div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates fuga nobis explicabo impedit cupiditate eaque quis a repellendus, ipsum eum,
+             repellat dolor tempore itaque minima vitae similique, tenetur laudantium alias.
+        Ipsam, tempora soluta laudantium aliquam quae asperiores voluptatum.
+        Laboriosam laborum impedit mollitia officiis tempore modi nostrum quisquam consequuntur numquam. Doloremque perspiciatis animi asperiores
+        aperiam inventore reprehenderit illo. Nesciunt, est corporis?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem magnam iusto aliquam magni, mollitia 
+            neque asperiores quasi ea pariatur eligendi adipisci, aliquid provident possimus atque. Saepe rerum sint nemo atque. Lorem ipsum 
+            dolor sit amet consectetur, adipisicing elit. 
+            Tempora iure omnis architecto harum neque itaque ex dolore expedita fuga accusantium, 
+            enim nam dignissimos nisi nostrum necessitatibus. Aut assumenda cumque ipsum! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             A iusto consectetur cum quae consequatur tempore, praesentium libero dolor dicta molestias tenetur itaque impedit 
+            earum ut quasi unde, autem, omnis nesciunt?
+        Facere in eaque quisquam? Minima harum eum ab molestiae aspernatur dolore perferendis ea ipsam officiis quis?
+         Quis libero magnam quidem doloremque voluptatum reiciendis veritatis tempora, ex asperiores adipisci saepe earum?
+        </p>
+    </div>
+</div>
+<!--<div class="table">-->
+<!--{% if staf %}-->
+<!--<table cellspacing="0">-->
+<!--    <tr>-->
+<!--        <th>№</th>-->
+<!--        <th>Наименование услуги</th>-->
+<!--        <th>Стоимость услуги</th>-->
+<!--        <th>Действия</th>-->
+<!--    </tr>-->
+
+<!--    {% for elem in staf.qs %}-->
+<!--    <tr>-->
+<!--        <td>{{ elem.ind }}</td>-->
+<!--        <td>{{ elem.name }}</td>-->
+<!--        <td>{{ elem.price }}</td>-->
+<!--        <td class="button"><a href="{% url 'task-delete' elem.id %}" class="delete">Удалить</a>-->
+<!--            <a href="{% url 'task-update' elem.id %}" class="edit">Редактировать</a></td>-->
+<!--    </tr>-->
+<!--    {% endfor %}-->
+<!--</table>-->
+<!--{% else %}-->
+<!--{% endif %}-->
+<!--</div>-->
+{% endblock %}

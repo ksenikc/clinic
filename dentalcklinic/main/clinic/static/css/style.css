@@ -1,0 +1,150 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    width: 1400px;
+    margin: 0 auto;
+}
+/* header */
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: 100px;
+    margin-bottom: 50px;
+}
+.logo {
+    display: flex;
+}
+
+.header__logo img{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    bottom: 1px;
+}
+.logo-navigate {
+    display: flex;
+    padding-top: 30px;
+    justify-content: end;
+}
+.logo-navigate  a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    list-style-type: none;
+    margin-right: 20PX;
+    text-transform: uppercase;
+}
+/* footer */
+footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    height: 200px;
+    margin-top: 100px;
+}
+
+footer h3 {
+    color: grey;
+    font-size: 14px;
+}
+
+.links-block li {
+    list-style-type: none;
+    margin-right: 20PX;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.links-block li a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer__logotype {
+    padding-left: 30px;
+}
+
+.footer__logotype .footer-logo {
+    display: flex;
+}
+
+.footer-logo img {
+    width: 100px;
+    height: 100px;
+}
+
+/* index */
+.container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+.line{
+    border-bottom: 2px solid #34abda ;
+    width: 100px;
+    margin-bottom: 30px;
+}
+.container h1, h3{
+    font-weight: normal;
+}
+.content h1 span{
+    color: #34abda  ;
+}
+.content h1 {
+    font-size: 30pt;
+    
+}
+.content h3 {
+    font-size: 23pt;
+    margin-top: -15px;
+    color: grey;
+}
+
+/* price */
+table{
+    width: 100%;
+}
+table,tr,th,td{
+    border: 1px solid rgb(197, 197, 197);
+    border-collapse: collapse;
+}
+th,td{
+    padding: 5px;
+}
+th{
+    color: grey;
+}
+.zalogo{
+    text-align: center;
+    font-size: 50px;
+    font-weight: normal;
+}
+.containers .line{
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.zalogo span{
+    color:#34abda;
+}
+/* contacts */
+.contacts{
+    background-color: #4bb918c2;
+    height: 600px;
+}
+.contacts-block{
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    font-size: 18px;
+    position: relative;
+    float: right;
+    top: 150px;
+    right: 70px;
+}

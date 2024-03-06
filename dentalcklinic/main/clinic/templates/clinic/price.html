@@ -1,0 +1,30 @@
+{% extends 'clinic/base.html' %}
+{% load static %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<div class="containers">
+    <h1 class="zalogo">Стоимость <span> услуг</span></h1>
+    <div class="line"></div>
+    {% if posts %}
+    <table>
+        <tr>
+            <th>Наименование услуг</th>
+            <th>Лечение зубов без микроскопа</th>
+            <th>Лечение зубов с микроскопом</th>
+        </tr>
+        {% for elem in posts %}
+        <tr>
+           <td>{{elem.title}}</td>
+            <td>{{elem.price1}}</td>
+            <td>{{elem.price2}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+        <p> У вас нет услуг </p>
+    {% endif %}
+</div>
+{% endblock %}
